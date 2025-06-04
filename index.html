@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arena Lobão da Vila</title>
   <style>
     body {
@@ -10,26 +10,90 @@
       font-family: Arial, sans-serif;
       background-color: #111;
       color: #fff;
-      text-align: center;
     }
-    header img {
-      width: 100%;
-      max-width: 1200px;
-      display: block;
-      margin: 0 auto;
+    header {
+      text-align: center;
+      background-color: #ffcc00;
+      color: #000;
+      padding: 1rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background-color: #000;
+      padding: 1rem;
+    }
+    nav a {
+      color: #ffcc00;
+      text-decoration: none;
+      font-weight: bold;
     }
     section {
       padding: 2rem;
+      text-align: center;
+    }
+    .product {
+      background-color: #222;
+      margin: 1rem;
+      padding: 1rem;
+      border: 1px solid #444;
+      border-radius: 10px;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="arena_lobao_banner.jpg" alt="Arena Lobão da Vila">
+    <h1>Arena Lobão da Vila</h1>
+    <p>"A quebrada respira"</p>
   </header>
-  <section>
-    <h2>Bem-vindo à Arena Lobão da Vila</h2>
-    <p>Futebol, Motoclube, Música ao Vivo — tudo no mesmo espaço.</p>
+
+  <nav>
+    <a href="#home">Início</a>
+    <a href="#motoclube">Motoclube</a>
+    <a href="#musica">Música ao Vivo</a>
+    <a href="#loja">Loja</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section id="home">
+    <h2>Bem-vindo à Arena</h2>
+    <p>Futebol, cultura, irmandade e som ao vivo no coração da quebrada. Até o apito final!</p>
+  </section>
+
+  <section id="motoclube">
+    <h2>Motoclube</h2>
+    <p>Encontros semanais com a irmandade sobre duas rodas. Participe dos rolê e dos eventos especiais!</p>
+  </section>
+
+  <section id="musica">
+    <h2>Música ao Vivo</h2>
+    <p>Bandas locais e artistas convidados agitam nossas noites de segunda, quarta e sexta. Cola com nós!</p>
+  </section>
+
+  <section id="loja">
+    <h2>Loja da Arena</h2>
+    <div class="product">
+      <h3>Camiseta Oficial</h3>
+      <p>Preto e amarelo, estampada com a marca da quebrada. Tamanhos variados.</p>
+      <p><strong>R$ 49,90</strong></p>
+    </div>
+    <div class="product">
+      <h3>Boné Arena</h3>
+      <p>Estilo firmeza com proteção e atitude.</p>
+      <p><strong>R$ 39,90</strong></p>
+    </div>
+    <div class="product">
+      <h3>Chaveiro do Motoclube</h3>
+      <p>Leve a Arena com você onde for.</p>
+      <p><strong>R$ 9,90</strong></p>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Fale Conosco</h2>
+    <p>Email: contato@arenalobao.com</p>
+    <p>Instagram: @arenalobao</p>
     <p>Funcionamento: Segundas, Quartas e Sextas</p>
   </section>
 </body>
